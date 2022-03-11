@@ -1,0 +1,130 @@
+.search-input-card{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 70px;
+	padding: 0px 20px;
+	justify-content: center;
+}
+
+.search-input-container{
+	display: flex;
+	flex: 1;
+	align-items: center;		
+}
+
+.search-icon{
+	font-size: 30px;
+	margin-right: 10px;
+	color: gray;
+}
+
+.search-input{
+	margin-right: 20px;
+	width: 90%;
+	border-radius: 20px;
+}
+
+.button-ripple{
+	width: 200px;
+	border-radius: 20px;
+}
+
+.add-button{
+	font-size: 20px;
+}
+
+.post-list-container{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.post-container{
+	width: 30%;
+	margin-right: 3%;
+	margin-bottom: 30px;
+	transition: transform .5s; 
+}
+
+.post-container:hover{
+	transform: scale(1.03);
+}
+
+.post-image{
+	width:100%;
+	height:220px;
+}
+
+.post-body{
+	padding:0px 20px 20px 20px;
+	margin-top: 20px;
+}
+
+.tag-container{
+	margin-bottom: 10px;
+	background-color: #EFEFEF;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+	overflow: scroll;
+	border-radius: 5px;
+}
+
+.tag-badge{
+	margin-right: 10px;
+}
+
+.post-date-container{
+	display: flex;
+	align-items: center;
+	height: 20px;
+}
+
+.post-date-icon{
+	color: gray;
+}
+
+.post-date-text{
+	color: gray;
+	margin-left: 5px;
+	margin-top: 12px;
+}
+
+.post-content{
+	margin-top: 10px;
+	width: 300px;
+	height: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	flex: 1;
+}
+
+.post-footer-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.post-delete-icon{
+	cursor: pointer;
+	color: red;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 1042px) {
+	.post-container{
+		width: 47%;
+		margin-right: 3%;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 683px) {
+	.post-container{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
